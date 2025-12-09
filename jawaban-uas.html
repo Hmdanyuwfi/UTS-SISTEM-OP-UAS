@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Jawaban UAS - MUHAMMAD HAMDAN YUWAFI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-animation">
+        <div class="floating-particles"></div>
+    </div>
+
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Tutorial Instalasi</a>
+                    <a href="jawaban-uas.html" class="nav-link active">Jawaban UAS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-placeholder">
+                        <div class="logo-circle">
+                            <span class="logo-text">📝</span>
+                        </div>
+                    </div>
+                    <div class="institution-info">
+                        <h1 class="institution-name">JAWABAN UAS</h1>
+                        <h2 class="institution-subtitle">SISTEM OPERASI</h2>
+                        <h3 class="faculty-name">UJIAN AKHIR SEMESTER</h3>
+                        <p class="address">Jl. Karangdowo No. 9 Kedungwuni Kab. Pekalongan Kode Pos 51173</p>
+                        <p class="contact">Telp/Fax. 0285 7831614 email : <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0576646c6b71606e2b6c71766b70756e69456268646c692b666a68">[email&#160;protected]</a> #SantriHighTech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Student Info Section -->
+            <section class="student-info">
+                <div class="info-card">
+                    <h2 class="section-title">Informasi Mahasiswa</h2>
+                    <div class="student-details">
+                        <div class="detail-item">
+                            <span class="label">Nama:</span>
+                            <span class="value">MUHAMMAD HAMDAN YUWAFI</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">NIM:</span>
+                            <span class="value">102240058</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Mata Kuliah:</span>
+                            <span class="value">SISTEM OPERASI / 3 SKS</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Semester:</span>
+                            <span class="value">GANJIL 2024/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="answer-section">
+                <div class="section-header">
+                    <h2 class="section-title">Jawaban Ujian Akhir Semester</h2>
+                </div>
+
+                <div class="answer-card">
+                    <h3 class="card-title">1. Perbedaan struktur sistem operasi: Layered Approach dan Client–Server</h3>
+                    <div class="card-content">
+                        <div class="question-placeholder">
+                            <p class="placeholder-text">Jawaban Soal 1</p>
+                            <div class="answer-space">
+                                Pada pendekatan layered, sistem operasi disusun dalam bentuk lapisan-lapisan yang tertata dari lapisan yang berhubungan langsung dengan perangkat keras sampai ke lapisan paling atas yang berhubungan dengan pengguna. Setiap lapisan hanya berinteraksi dengan lapisan yang berada tepat di atas atau di bawahnya. Keuntungan dari cara ini adalah struktur sistem menjadi lebih mudah dipahami, lebih aman, dan lebih gampang dilacak jika terjadi kesalahan karena lokasi permasalahan biasanya dapat dipersempit ke lapisan tertentu. Namun cara ini juga memiliki kelemahan yaitu proses yang harus melewati banyak lapisan membuat kinerjanya bisa melambat, dan proses perancangannya sendiri cukup rumit.
+Berbeda dengan model client–server yang membagi fungsi-fungsi sistem operasi ke beberapa server terpisah, di mana setiap server bertugas memberikan layanan tertentu kepada client. Kelebihan model ini ada pada modularitasnya, sehingga lebih mudah dikembangkan dan gangguan pada satu layanan tidak selalu berdampak ke layanan lainnya. Meskipun begitu, model ini memerlukan komunikasi antar proses yang lebih sering sehingga bisa mengurangi performa jika tidak dikelola dengan baik.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="answer-card">
+                    <h3 class="card-title">2. Siklus hidup proses, PCB, dan penjelasan context switching</h3>
+                    <div class="card-content">
+                        <div class="question-placeholder">
+                            <p class="placeholder-text">Jawaban Soal 2</p>
+                            <div class="answer-space">
+                                Siklus hidup proses dimulai ketika proses dibuat, kemudian masuk ke antrian ready untuk menunggu giliran mendapatkan CPU. Saat CPU mengeksekusinya, proses berada pada kondisi running. Jika proses memerlukan operasi I/O atau menunggu suatu kejadian tertentu, ia akan berpindah ke kondisi waiting. Setelah pekerjaan selesai, proses akan berakhir atau terminated. Seluruh informasi penting mengenai proses, seperti nilai register, status proses, informasi memori, dan data terkait lainnya, dicatat oleh sistem operasi dalam sebuah struktur yang disebut PCB atau Process Control Block.
+Context switching terjadi ketika CPU berpindah dari satu proses ke proses lainnya. Sistem operasi harus menyimpan keadaan proses yang sedang berjalan ke dalam PCB, lalu memuat keadaan proses yang berikutnya. Proses ini memungkinkan multitasking terjadi, tetapi juga menimbulkan beban tambahan karena CPU harus melakukan pekerjaan tambahan sebelum menjalankan proses lain.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="answer-card">
+                    <h3 class="card-title">3. Penjelasan thread, jenis thread, dan model multithreading</h3>
+                    <div class="card-content">
+                        <div class="question-placeholder">
+                            <p class="placeholder-text">Jawaban Soal 3</p>
+                            <div class="answer-space">
+                                Thread adalah unit eksekusi terkecil dalam sebuah proses, sehingga satu proses bisa memiliki beberapa thread untuk menjalankan beberapa tugas secara bersamaan. Thread yang berat atau heavyweight biasanya merujuk pada proses yang memiliki ruang memori terpisah, sedangkan lightweight thread berbagi ruang memori yang sama dengan proses induknya sehingga lebih ringan dan lebih cepat dalam pergantian konteks.
+Dalam implementasinya ada beberapa model multithreading. Pada model many-to-one, banyak thread user dipetakan ke satu thread kernel sehingga efisien tetapi tidak dapat berjalan paralel pada CPU multiprosesor. Pada model one-to-one, setiap thread user memiliki thread kernel sehingga mendukung paralelisme, tetapi membutuhkan sumber daya lebih besar. Sementara itu model many-to-many mencoba menggabungkan kelebihan keduanya dengan membiarkan sejumlah thread user dipetakan ke beberapa thread kernel sesuai kebutuhan, meskipun implementasinya lebih rumit.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answer-card">
+                    <h3 class="card-title">4. CPU Scheduling: tujuan, jenis scheduler, dan contoh algoritma</h3>
+                    <div class="card-content">
+                        <div class="question-placeholder">
+                            <p class="placeholder-text">Jawaban Soal 4</p>
+                            <div class="answer-space">
+                                Tujuan utama CPU scheduling adalah agar penggunaan CPU menjadi lebih optimal, waktu tunggu proses menjadi lebih pendek, waktu penyelesaian lebih cepat, dan proses mendapatkan pembagian waktu yang adil. Dalam sistem operasi terdapat tiga jenis scheduler, yaitu long-term scheduler yang menentukan proses mana yang boleh masuk ke memori, medium-term scheduler yang bertugas mengatur proses yang harus dikeluarkan sementara dari memori, dan short-term scheduler yang langsung menentukan proses mana yang akan dijalankan oleh CPU berikutnya.
+Beberapa algoritma penjadwalan yang umum digunakan antara lain FCFS yang menjalankan proses berdasarkan urutan kedatangannya, SJF yang memilih proses dengan waktu eksekusi terpendek, priority scheduling yang menentukan proses berdasarkan tingkat prioritas, dan round robin yang memberi setiap proses jatah waktu yang sama secara bergilir.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answer-card">
+                    <h3 class="card-title">5. Sinkronisasi proses dan contoh masalah klasik</h3>
+                    <div class="card-content">
+                        <div class="question-placeholder">
+                            <p class="placeholder-text">Jawaban Soal 5</p>
+                            <div class="answer-space">
+                                Sinkronisasi diperlukan agar proses-proses yang berjalan bersamaan tidak saling mengganggu terutama ketika mengakses data atau resource yang sama. Sistem operasi harus memastikan bahwa hanya satu proses yang boleh masuk ke bagian kritis pada satu waktu, proses lain tidak boleh menghalangi tanpa alasan, dan setiap proses mendapat kesempatan sehingga tidak menunggu terlalu lama. Dalam praktiknya, sering muncul permasalahan seperti race condition, deadlock, ataupun starvation. Untuk menggambarkan tantangan sinkronisasi ini, biasanya digunakan contoh-contoh klasik seperti masalah producer–consumer yang membutuhkan buffer bersama, dining philosophers yang sering menyebabkan deadlock, serta readers–writers yang menuntut pengaturan antara pembaca dan penulis agar data tetap konsisten.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answer-card">
+                    <h3 class="card-title">6. Deadlock: definisi, syarat, contoh, dan metode penanganan</h3>
+                    <div class="card-content">
+                        <div class="question-placeholder">
+                            <p class="placeholder-text">Jawaban Soal 6</p>
+                            <div class="answer-space">
+                                Deadlock adalah keadaan ketika dua atau lebih proses saling menunggu resource yang dikuasai proses lain sehingga tidak ada satu pun yang bisa melanjutkan pekerjaannya. Keadaan ini bisa terjadi jika empat kondisi terpenuhi secara bersamaan, yaitu adanya mutual exclusion, proses menahan resource sambil menunggu resource lain, resource tidak bisa direbut paksa, dan terjadi lingkaran proses yang saling menunggu.
+Contoh sederhana deadlock adalah ketika dua aplikasi sama-sama mengunci file yang berbeda, kemudian masing-masing menunggu file yang sedang digunakan oleh aplikasi lainnya. Untuk mengatasi deadlock, sistem operasi bisa mencegah salah satu syarat deadlock terjadi, menghindarinya dengan algoritma tertentu seperti Banker’s Algorithm, mendeteksi lalu memulihkan dengan menghentikan proses yang menyebabkan siklus, atau pada beberapa sistem memilih untuk mengabaikannya karena jarang terjadi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answer-card">
+                    <h3 class="card-title">7. Manajemen memori: tugas dan perbedaan penyimpanan</h3>
+                    <div class="card-content">
+                        <div class="question-placeholder">
+                            <p class="placeholder-text">Jawaban Soal 7</p>
+                            <div class="answer-space">
+                                Manajemen memori bertugas membagi, mencatat, dan mengatur penggunaan memori agar proses bisa berjalan dengan aman dan efisien. Sistem operasi harus bisa mengalokasikan memori ketika proses membutuhkan, melepaskannya kembali setelah tidak terpakai, mengelola memori virtual, serta menjaga agar proses tidak memasuki ruang memori proses lain.
+RAM sebagai penyimpanan primer jauh lebih cepat tetapi bersifat sementara dan akan hilang jika perangkat dimatikan. Sementara penyimpanan sekunder seperti HDD, SSD, atau media eksternal lebih lambat, tetapi menyimpan data secara permanen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answer-card">
+                    <h3 class="card-title">8. Teknik alokasi penyimpanan: kontigu, terurut, dan indeks</h3>
+                    <div class="card-content">
+                        <div class="question-placeholder">
+                            <p class="placeholder-text">Jawaban Soal 8</p>
+                            <div class="answer-space">
+                                Pada alokasi kontigu, data file ditempatkan dalam blok-blok yang letaknya berdekatan sehingga proses pembacaan menjadi cepat, tetapi cara ini sering menyebabkan fragmentasi eksternal dan memerlukan ruang besar yang tersedia secara berurutan. Pada alokasi terurut atau linked, setiap blok file memiliki penunjuk ke blok berikutnya sehingga tidak membutuhkan ruang yang bersebelahan, walaupun akses acak menjadi lambat.
+Sedangkan pada indexed allocation, sistem menggunakan blok indeks khusus yang berisi daftar lokasi seluruh blok penyusun file. Cara ini membuat akses data lebih mudah dan cepat karena semuanya tercatat dalam satu indeks, tetapi memerlukan tambahan ruang untuk menyimpan indeks tersebut.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MUHAMMAD HAMDAN YUWAFI - Jawaban UAS Sistem Operasi</p>
+            <p>Institut Teknologi dan Sains Nahdlatul Ulama (ITSNU) Pekalongan</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+
+</html>

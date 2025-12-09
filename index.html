@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Tutorial Instalasi Linux Debian - MUHAMMAD HAMDAN YUWAFI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Tutorial Instalasi</a>
+                    <a href="jawaban-uas.html" class="nav-link">Jawaban UAS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-placeholder">
+                        <div class="logo-circle">
+                            <span class="logo-text">🌀</span>
+                        </div>
+                    </div>
+                    <div class="institution-info">
+                        <h1 class="institution-name">DEBIAN LINUX</h1>
+                        <h2 class="institution-subtitle"></h2>
+                        <h3 class="faculty-name">TUGAS UTS SISTEM OPERASI</h3>
+                        <p class="address">Jl. Karangdowo No. 9 Kedungwuni Kab. Pekalongan Kode Pos 51173</p>
+                        <p class="contact">Telp/Fax. 0285 7831614 email : <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0576646c6b71606e2b6c71766b70756e69456268646c692b666a68">[email&#160;protected]</a> #SantriHighTech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Student Info Section -->
+            <section class="student-info">
+                <div class="info-card">
+                    <h2 class="section-title">Informasi Mahasiswa</h2>
+                    <div class="student-details">
+                        <div class="detail-item">
+                            <span class="label">Nama:</span>
+                            <span class="value">MUHAMMAD HAMDAN YUWAFI</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">NIM:</span>
+                            <span class="value">102240058</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Mata Kuliah:</span>
+                            <span class="value">SISTEM OPERASI / 3 SKS</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Semester:</span>
+                            <span class="value">GANJIL 2024/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tutorial Section -->
+            <section class="tutorial-section">
+                <div class="section-header">
+                    <h2 class="section-title">Tutorial Instalasi Linux Debian di Oracle VirtualBox</h2>
+                    <p class="section-subtitle">Panduan lengkap untuk menginstal sistem operasi Linux Debian menggunakan Oracle VirtualBox</p>
+                </div>
+
+                <!-- Prerequisites -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Persiapan Sebelum Instalasi</h3>
+                    <div class="card-content">
+                        <ul class="requirements-list">
+                            <li>Oracle VirtualBox terinstal di komputer Anda</li>
+                            <li>File ISO Linux Debian (download dari situs resmi debian.org)</li>
+                            <li>Minimal 2GB RAM untuk virtual machine</li>
+                            <li>Minimal 20GB ruang penyimpanan kosong</li>
+                            <li>Koneksi internet untuk update dan instalasi paket tambahan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 1: Membuat Virtual Machine Baru</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Buka Oracle VirtualBox</li>
+                            <li>Klik tombol "New" atau "Baru" untuk membuat VM baru</li>
+                            <li>Masukkan nama untuk VM (contoh: "Debian Linux")</li>
+                            <li>Pilih Type: "Linux"</li>
+                            <li>Pilih Version: "Debian (64-bit)"</li>
+                            <li>Klik "Next" untuk melanjutkan</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 2: Konfigurasi Memory (RAM)</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Atur jumlah RAM yang akan dialokasikan (minimal 1024MB, disarankan 2048MB)</li>
+                            <li>Pastikan tidak mengalokasikan lebih dari setengah RAM fisik komputer</li>
+                            <li>Klik "Next" untuk melanjutkan</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 3: Membuat Hard Disk Virtual</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Pilih "Create a virtual hard disk now"</li>
+                            <li>Klik "Create"</li>
+                            <li>Pilih tipe file hard disk: "VDI (VirtualBox Disk Image)"</li>
+                            <li>Pilih "Dynamically allocated" untuk efisiensi ruang</li>
+                            <li>Atur ukuran hard disk (minimal 20GB, disarankan 30GB)</li>
+                            <li>Klik "Create" untuk menyelesaikan</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 4: Konfigurasi Tambahan VM</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Pilih VM yang telah dibuat, klik "Settings"</li>
+                            <li>Di tab "System" > "Processor", atur jumlah CPU cores (1-2 cores)</li>
+                            <li>Di tab "Display", aktifkan "Enable 3D Acceleration"</li>
+                            <li>Di tab "Storage", klik ikon CD, pilih "Choose a disk file"</li>
+                            <li>Pilih file ISO Debian yang telah didownload</li>
+                            <li>Klik "OK" untuk menyimpan pengaturan</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 5: Memulai Instalasi Debian</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Klik "Start" untuk menjalankan VM</li>
+                            <li>VM akan boot dari ISO Debian</li>
+                            <li>Pilih "Install" atau "Graphical Install" dari menu boot</li>
+                            <li>Pilih bahasa instalasi (English atau Indonesian)</li>
+                            <li>Pilih lokasi geografis (Indonesia)</li>
+                            <li>Konfigurasi keyboard layout</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 6: Konfigurasi Jaringan dan Pengguna</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Masukkan hostname untuk sistem (contoh: "debian-vm")</li>
+                            <li>Masukkan domain name (bisa dikosongkan)</li>
+                            <li>Buat password untuk root user</li>
+                            <li>Buat user account baru dengan nama lengkap</li>
+                            <li>Masukkan username dan password untuk user tersebut</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 7: Partisi Hard Disk</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Pilih "Guided - use entire disk" untuk partisi otomatis</li>
+                            <li>Pilih hard disk virtual yang telah dibuat</li>
+                            <li>Pilih "All files in one partition" untuk kemudahan</li>
+                            <li>Konfirmasi perubahan partisi dengan memilih "Yes"</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 8 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 8: Instalasi Sistem Base</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Tunggu proses instalasi sistem base (5-15 menit)</li>
+                            <li>Konfigurasi package manager (pilih mirror terdekat)</li>
+                            <li>Pilih apakah akan menggunakan proxy (biasanya "No")</li>
+                            <li>Pilih paket software yang akan diinstal:
+                                <ul>
+                                    <li>Debian desktop environment</li>
+                                    <li>GNOME (atau desktop environment pilihan)</li>
+                                    <li>Standard system utilities</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 9 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 9: Instalasi GRUB Bootloader</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Pilih "Yes" untuk menginstal GRUB bootloader</li>
+                            <li>Pilih hard disk untuk instalasi GRUB (/dev/sda)</li>
+                            <li>Tunggu proses instalasi selesai</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Step 10 -->
+                <div class="tutorial-card">
+                    <h3 class="card-title">Langkah 10: Menyelesaikan Instalasi</h3>
+                    <div class="card-content">
+                        <ol class="steps-list">
+                            <li>Setelah instalasi selesai, klik "Continue"</li>
+                            <li>VM akan restart otomatis</li>
+                            <li>Lepas ISO dari virtual drive (Devices > Optical Drives > Remove disk)</li>
+                            <li>Login menggunakan user account yang telah dibuat</li>
+                            <li>Sistem Debian siap digunakan!</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Tips -->
+                <div class="tutorial-card tips-card">
+                    <h3 class="card-title">Tips Tambahan</h3>
+                    <div class="card-content">
+                        <ul class="tips-list">
+                            <li><strong>Install Guest Additions:</strong> Untuk performa yang lebih baik, install VirtualBox Guest Additions melalui menu Devices</li>
+                            <li><strong>Update Sistem:</strong> Jalankan <code>sudo apt update && sudo apt upgrade</code> untuk update sistem</li>
+                            <li><strong>Snapshot:</strong> Buat snapshot setelah instalasi selesai untuk backup</li>
+                            <li><strong>Shared Folder:</strong> Konfigurasi shared folder untuk berbagi file dengan host OS</li>
+                            <li><strong>Network:</strong> Gunakan NAT untuk akses internet atau Bridged untuk akses jaringan lokal</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MUHAMMAD HAMDAN YUWAFI - Tutorial Instalasi Linux Debian</p>
+            <p>Institut Teknologi dan Sains Nahdlatul Ulama (ITSNU) Pekalongan</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+
+</html>
